@@ -29,7 +29,7 @@ header{
   z-index: 1000; 
 }
 
-ul{
+nav ul{
   list-style-type: none;
   align-items: center;
 }
@@ -464,10 +464,10 @@ footer {
   font-family: 'Poppins_Bold';
   display: flex;
   justify-content: center;
+  margin: 10%;
 }
 
 footer ul {
-  display: flex;
   gap: 50px; /* Ici, le gap est appliqué aux éléments de la liste */
   list-style-type: none; /* Pour supprimer les puces de la liste */
   padding: 0;
@@ -479,6 +479,61 @@ footer a {
   text-decoration: none;
 }
 
+.footer-section {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.footer-section h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: block;
+}
+
+.liste-footer li {
+  margin-bottom: 8px;
+}
+
+.liste-footer i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.liste-footer a {
+  color: white;
+}
+
+.liste-footer a:hover {
+  color: gray;
+}
+
+/* Ventes (RESPONSIVE) */
+@media (max-width: 768px) {
+  .footer-section h1{
+    font-size: 15px;
+  }
+  .footer-section a {
+    font-size: 10px;
+  }
+}
 
 /*
 --------------------------------------------------------------
