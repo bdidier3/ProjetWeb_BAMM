@@ -49,7 +49,7 @@ header nav ul {
 }
 
 
-li a:after {
+nav li a:after {
   content: '';
   display: block;
   margin: auto;
@@ -58,7 +58,7 @@ li a:after {
   background: transparent;
   transition: width .5s ease, background-color .5s ease;
 }
-li a:hover:after {
+nav li a:hover:after {
   width: 90%;
   background: white;
 }
