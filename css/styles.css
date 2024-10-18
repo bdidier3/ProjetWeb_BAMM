@@ -464,7 +464,10 @@ footer {
   font-family: 'Poppins_Bold';
   display: flex;
   justify-content: center;
-  margin: 10%;
+  margin-top:5%;
+  margin-left: 15%;
+  margin-right: 15%;
+
 }
 
 footer ul {
@@ -513,6 +516,11 @@ footer a {
 }
 
 .liste-footer i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer-section h1{
   font-size: 24px;
   margin-right: 10px;
 }
