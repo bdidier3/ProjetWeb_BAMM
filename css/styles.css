@@ -546,7 +546,14 @@ footer a {
     font-size: 15px;
   }
   .footer-section a {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  .footer-section a i{
+    font-size: 12px;
+    align-items: center;
+  }
+  iframe{
+    display: none;
   }
 }
 
