@@ -497,6 +497,11 @@ header nav ul{
   color:white;
 }
 
+.carousel-slide img:hover{
+  filter: brightness(0.5);
+  transition: 0.3s;
+}
+
 .carousel-fleche--prev {
   left: 0;
 }
@@ -533,6 +538,7 @@ header nav ul{
   background-color: white;
   border-radius: 15px;
 }
+
 
 @media (max-width: 600px) {
   .carousel-slide {
