@@ -21,3 +21,11 @@ const navList = document.querySelector(".nav-list");
 mobileMenu.addEventListener("click", () => {
     navList.classList.toggle("active"); // Ajoute ou retire la classe active
 });
+
+const carousel = document.querySelector(".carousel-container");
+const slide = document.querySelector(".carousel-slide");
+
+function handleCarouselMove(positive = true) {
+  const slideWidth = slide.clientWidth;
+  carousel.scrollLeft = positive ? carousel.scrollLeft + slideWidth : carousel.scrollLeft - slideWidth;
+}
