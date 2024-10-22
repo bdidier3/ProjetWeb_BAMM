@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins_Bold";
+}
+
+/* 
+
+--------------------------------------------------------------
+|                          Barre de naviguation              |
+--------------------------------------------------------------
+
+
+*/
+
+#nav{
+    transition: background-color 0.4s ease; /* Transition fluide en 0.4 secondes */
+  }
+  
+  header{
+    position:fixed;
+    font-family: "Poppins_Bold";
+    width: 100%; /* Prend toute la largeur de la page */
+    z-index: 1000; 
+  }
+  
+  ul{
+    list-style-type: none;
+    align-items: center;
+  }
+  li{
+    display: inline-block;
+  }
+  li a{
+    color:white;
+    text-decoration: none;
+  }
+  header nav ul {
+    padding:1%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+  
+  .menu-toggle{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 3px; /* Épaisseur des barres */
+    width: 25px; /* Largeur des barres */
+    background-color: white; /* Couleur des barres */
+    margin: 3px 0; /* Espace entre les barres */
+  }
+  
+  /* BARRE SCROLL */
+  nav.scrolled {
+    background-color: black; /* Change en noir après le scroll */
+  }
+  
+  /* Barre de navation HAUT (RESPONSIVE) */
+  @media (max-width: 768px) {
+    .nav-list {
+      display: none; /* Masquer la liste par défaut */
+      flex-direction: column; /* Affiche les éléments verticalement */
+      position: absolute; /* Positionnement absolu */
+      top: 30px; /* Positionnement sous la barre de navigation */
+      right: 0; /* Aligne à droite */
+      background-color: black; /* Fond noir */
+      width: 100%; /* Prend toute la largeur */
+      padding: 10px 0; /* Espace vertical */
+  }
+  
+  .nav-list.active {
+      display: flex; /* Affiche la liste quand active */
+  }
+  
+  .menu-toggle {
+      display: flex; /* Affiche le menu burger */
+  }
+  
+  #nav{
+    background-color: black;
+  }
+  header nav ul{
+    gap:30px
+  }
+  }
+
+body{
+    margin: 20;
+    padding: 20;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+input[type="checkbox"]{
+    display: none; 
+}
+
+.formulaire{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 20%;
+}
+
+.contenu{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(224, 224, 224);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  margin-top: 20%;
+}
+
+/* Style de base pour le contenu */
+.contenu {
+  color: rgb(0, 0, 0); /* Couleur initiale */
+  transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
+}
+
+/* Changement de couleur lorsqu'on passe la souris */
+.contenu:hover {
+  background-color: rgb(234, 234, 234); /* Couleur au survol */
+}
+
+h1 {
+  text-align: center;
+}
+
+
+/*
+--------------------------------------------------------------
+|                          Police d'écriture                 |
+--------------------------------------------------------------
+*/
+@font-face {
+  font-family: 'Poppins_Bold';
+  src: url("../fonts/Poppins-Bold.ttf");
+}
