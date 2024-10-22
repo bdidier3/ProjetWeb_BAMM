@@ -141,17 +141,33 @@ header nav ul{
   text-align: center; /* Centrage du texte */
 }
 /* TITRE */
+
+@keyframes monter{
+  from{
+    opacity: 0;
+    transform: translateY(50px);
+
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+
+}
 .home-container h1{
   display: flex;
   justify-content: center;
   font-size: 10.5rem;
   font-family: 'Poppins_Bold';
+  animation: monter 1s ease-out;
 }
 /* SLOGAN */
 .home-container p{
   font-family: 'Poppins_Bold';
   display: flex;
   justify-content: center;
+  animation: monter 1s ease-out;
+
 }
 /* BOUTTON */
 .button-home{
@@ -159,6 +175,8 @@ header nav ul{
   display: flex;
   justify-content: center;
   gap: 20px;
+  animation: monter 1s ease-out;
+
 }
 .button-home button{
   background-color: transparent; /* Couleur de fond du bouton */
