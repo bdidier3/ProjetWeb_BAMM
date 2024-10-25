@@ -140,6 +140,26 @@ h1 {
 text-align: center;
 }
 
+.contenu-image {
+  display: flex;
+  align-items: flex-start; /* Aligne les images en haut des paragraphes */
+  margin: 20px 0;
+}
+
+.contenu {
+  flex: 1; /* Le texte occupe tout l'espace restant */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  margin-left: 20px; /* Espace entre le texte et l'image */
+  width: 200px; /* Largeur de l'image */
+  height: auto;
+}
+
 
 /*
 --------------------------------------------------------------
