@@ -559,6 +559,10 @@ header nav ul{
 }
 
 @media (max-width: 600px) {
+
+  #caroussel-image{
+    margin: 0;
+  }
   .carousel-slide {
     flex: 1 0 90%;
   }
