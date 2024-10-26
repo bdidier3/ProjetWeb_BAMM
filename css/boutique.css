@@ -138,12 +138,14 @@ body {
 }
 
 .produit{
+    position: relative;
     background-color: white;
     margin: 10px;
     border-radius: 15px;
     display: flex;
     gap: 8px;
     justify-content: center;
+    align-items: center;
     width: 250px;
     height: 250px;
 }
@@ -155,8 +157,44 @@ body {
     }
 }
 
+.price {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
-
+.buy-now-btn span {
+    font-size: 1.3em;
+    margin-left: 5px;
+}
+  
+.buy-now-btn {
+    position: absolute;
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins_Bold';
+}
+  
+.buy-now-btn:hover {
+    background-color: white;
+    color: black;
+}
 
 /*
 --------------------------------------------------------------
@@ -250,9 +288,6 @@ body {
   
     #caroussel-image{
       margin: 0;
-    }
-    .carousel-slide {
-      flex: 1 0 90%;
     }
     .titre-caroussel h1{
       font-size: 32px;
