@@ -148,7 +148,7 @@ body {
     height: 250px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .image{
         flex-direction: column;
         align-items: center;
@@ -246,7 +246,7 @@ body {
     border-radius: 15px;
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
   
     #caroussel-image{
       margin: 0;
