@@ -100,6 +100,73 @@ body{
   gap: 20px;
 }
 
+
+/*
+--------------------------------------------------------------
+|                          FOND A PROPOS                     |
+--------------------------------------------------------------
+*/
+#background-video-apropos {
+  position: absolute;
+  filter: brightness(0.7);
+  top: 0;
+  left: 0;
+  width: 100%; /* Pleine largeur */
+  height: 8%; /* 10% de la hauteur de la page */
+  object-fit: cover; /* Assure un bon ajustement sans déformation */
+  z-index: -1; /* En arrière-plan */
+}
+
+#home-apropos .background-high{
+display: flex;
+justify-content: center;
+margin-top:10% ;
+}
+
+.background-high h1{
+  position: absolute;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+}
+#home-apropos{
+  margin-bottom: 10%;
+}
+#text-apropos{
+  margin-top:10%;
+}
+@media (max-width: 768px) {
+  #background-video-apropos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Pleine largeur */
+    height: 5%; /* 10% de la hauteur de la page */
+    object-fit: cover; /* Assure un bon ajustement sans déformation */
+    z-index: -1; /* En arrière-plan */
+  }
+
+  #home-apropos {
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20%;
+  }
+  #home-apropos h1 {
+    font-size: 4rem;
+  }
+  #text-apropos{
+    margin-top:15%;
+  }
+}
+
+@media (max-width: 500px) {
+  #text-apropos{
+    margin-top:40%;
+  }
+}
+
+
 input[type="checkbox"]{
   display: none; 
 }
