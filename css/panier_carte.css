@@ -1,8 +1,14 @@
 * {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins_Bold";
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins_Bold";
+  }
+  
+body {
+    background-color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
 }
+
 
 /* 
 
@@ -22,15 +28,17 @@ header{
   font-family: "Poppins_Bold";
   width: 100%; /* Prend toute la largeur de la page */
   z-index: 1000; 
+  background-color: black;
 }
 
-ul{
+nav ul{
   list-style-type: none;
   align-items: center;
 }
 li{
   display: inline-block;
 }
+
 li a{
   color:white;
   text-decoration: none;
@@ -42,6 +50,20 @@ header nav ul {
   gap: 100px;
 }
 
+
+nav li a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+nav li a:hover:after {
+  width: 90%;
+  background: white;
+}
 .menu-toggle{
   display: none;
   flex-direction: column;
@@ -89,125 +111,98 @@ header nav ul{
 }
 }
 
-body{
-  margin: 20;
-  padding: 20;
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  gap: 20px;
-}
 
-input[type="checkbox"]{
-  display: none; 
-}
+/* 
 
-.formulaire{
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  border-radius: 30px;
-  margin-top: 10%;
-}
+--------------------------------------------------------------
+|                          Body                              |
+--------------------------------------------------------------
 
-.contenu{
-background-color: #ffffff;
-padding: 20px;
-border-radius: 10px;
-margin-left: 10%;
-margin-right: 10%;
-margin-bottom: 5%;
-}
 
-/* Style de base pour le contenu */
-.contenu {
-color: rgb(0, 0, 0); /* Couleur initiale */
-transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
-}
+*/
 
-/* Changement de couleur lorsqu'on passe la souris */
-.contenu:hover {
-background-color: rgb(234, 234, 234); /* Couleur au survol */
-}
 
-h1 {
-  text-align: center;
-  color: white;
-  margin-top: 10%;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+  }
+  
+   section{
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section>h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-hr {
-  border: 2px solid white; 
-  width: 70%;                
-  margin-top: 20%;        
-}
 
-.formulaire {
-  background-color: white;
-  border-radius: 10px;
-  padding: 30px;
-  width: 100%;
-  max-width: 20%;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
+  .valide-btn {
+    background-color: #000000;
+    font-size: large;
+    margin: 15px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Aligne les éléments à gauche */
-}
+  .valide-btn:hover{
+    background-color: #0f0f0f;
+    transform: scale(1.2);
+  }
 
-label {
-  margin-top: 15%;
-  font-size: 18px; /* Taille du texte des labels */
-  font-weight: bold;
-  color: #333;
-}
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"] {
-  width: 80%; /* Largeur des champs */
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 14px; /* Taille du texte dans les champs */
-  transition: border-color 0.3s;
-}
+  #infopaye{
+    text-align: center;
+    width: 550px;
+  }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="date"]:focus {
-  border-color: #555;
-  outline: none;
-}
+  .paypal-btn{
+    background-color: #070c98;
+    font-size: large;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: white;
+    border: none;
+    width: 75%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
 
-.submit-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  background-color: black; /* Couleur de fond */
-  color: white; /* Couleur du texte */
-  font-weight: bold;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px; /* Coins arrondis */
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+  .paypal-btn:hover{
+    background-color: #0c0c55;
+    transform: scale(1.2);
+  }
 
-.submit-button:hover {
-  background-color: #ffe9e9; /* Couleur au survol */
-  color: black;
-}
+  #optionpayment>input{
+    padding: 10px;
+    margin: 5px;
+  }
+
+  #adresse{
+    width: 400px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+
 
 /*
 --------------------------------------------------------------
@@ -324,11 +319,16 @@ footer a {
 }
 }
 
+
+
+
 /*
 --------------------------------------------------------------
 |                          Police d'écriture                 |
 --------------------------------------------------------------
 */
+
+
 @font-face {
   font-family: 'Poppins_Bold';
   src: url("../fonts/Poppins-Bold.ttf");
