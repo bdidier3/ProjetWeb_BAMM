@@ -112,6 +112,21 @@ body {
   }
   }
 
+.panier{
+    display: flex;
+    flex-direction: row;
+}
+
+  .counter {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin-left: 5px; /* Espace entre le texte "Panier" et le compteur */
+    font-size: 0.8em;
+    vertical-align: middle; /* Pour aligner verticalement avec le texte */
+}
+
 /*
 --------------------------------------------------------------
 |                          PAGE BOUTIQUE                            |

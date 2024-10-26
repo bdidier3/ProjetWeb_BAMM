@@ -21,7 +21,12 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="a_propos.html">À propos</a></li>
             <li><a href="boutique.html">Boutique</a></li>
-            <li><a href="panier.html">Panier</a></li>
+            <li>
+                <div class="panier">
+                    <a href="panier.html">Panier</a>
+                    <span class="counter" id="item-count" style="display: none;">0</span>
+                </div>
+            </li>
             <span></span>
         </ul>
     </nav>
@@ -575,21 +580,62 @@
         </div>
     
         <div class="footer-section">
-            <h1>Categorie</h1>
+            <h1>Top Categorie</h1>
             <ul>
-                <li onclick="
-                document.getElementById('populaire').style.display='block';
-                document.getElementById('nosDoudounes').style.display='none';
-                document.getElementById('nosGilets').style.display='none';
-                document.getElementById('nosChemises').style.display='none';
-                document.getElementById('nosPulls').style.display='none';
-                document.getElementById('nosJeans').style.display='none';
-                document.getElementById('nosJoggings').style.display='none';
-                document.getElementById('nosShorts').style.display='none';
-                document.getElementById('nosChaussettes').style.display='none';
-                document.getElementById('nosChaussures').style.display='none';"><a href="#">Les plus populaires</a></li>
-                <li><a href="#">T-Shirt</a></li>
-                <li><a href="#">Short</a></li>
+                <li>
+                    <a onclick="
+                    document.getElementById('populaire').style.display='block';
+                    document.getElementById('nosDoudounes').style.display='none';
+                    document.getElementById('nosGilets').style.display='none';
+                    document.getElementById('nosChemises').style.display='none';
+                    document.getElementById('nosPulls').style.display='none';
+                    document.getElementById('nosJeans').style.display='none';
+                    document.getElementById('nosJoggings').style.display='none';
+                    document.getElementById('nosShorts').style.display='none';
+                    document.getElementById('nosChaussettes').style.display='none';
+                    document.getElementById('nosChaussures').style.display='none';"
+                    href="#">Les plus populaires</a>
+                </li>
+                <li><a onclick="
+                    document.getElementById('populaire').style.display='none';
+                    document.getElementById('nosDoudounes').style.display='none';
+                    document.getElementById('nosGilets').style.display='none';
+                    document.getElementById('nosChemises').style.display='none';
+                    document.getElementById('nosPulls').style.display='none';
+                    document.getElementById('nosJeans').style.display='none';
+                    document.getElementById('nosJoggings').style.display='none';
+                    document.getElementById('nosShorts').style.display='none';
+                    document.getElementById('nosChaussettes').style.display='none';
+                    document.getElementById('nosChaussures').style.display='block';"
+                    href="#">Chaussures</a>
+                </li>
+                <li><a onclick="
+                    document.getElementById('populaire').style.display='none';
+                    document.getElementById('nosDoudounes').style.display='none';
+                    document.getElementById('nosGilets').style.display='none';
+                    document.getElementById('nosChemises').style.display='none';
+                    document.getElementById('nosPulls').style.display='none';
+                    document.getElementById('nosJeans').style.display='block';
+                    document.getElementById('nosJoggings').style.display='none';
+                    document.getElementById('nosShorts').style.display='none';
+                    document.getElementById('nosChaussettes').style.display='none';
+                    document.getElementById('nosChaussures').style.display='none';"
+                    href="#">Jeans</a>
+                </li>
+                <li>
+                    <a onclick="
+                    document.getElementById('populaire').style.display='none';
+                    document.getElementById('nosDoudounes').style.display='none';
+                    document.getElementById('nosGilets').style.display='none';
+                    document.getElementById('nosChemises').style.display='none';
+                    document.getElementById('nosPulls').style.display='block';
+                    document.getElementById('nosJeans').style.display='none';
+                    document.getElementById('nosJoggings').style.display='none';
+                    document.getElementById('nosShorts').style.display='none';
+                    document.getElementById('nosChaussettes').style.display='none';
+                    document.getElementById('nosChaussures').style.display='none';"
+                    href="#">Pulls</a>
+                </li>
             </ul>
         </div>
 

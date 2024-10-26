@@ -29,3 +29,29 @@ function handleCarouselMove(positive = true) {
   const slideWidth = slide.clientWidth;
   carousel.scrollLeft = positive ? carousel.scrollLeft + slideWidth : carousel.scrollLeft - slideWidth;
 }
+
+
+// Variable pour le compteur
+let itemCount = 0;
+const counterElement = document.getElementById('item-count');
+
+// Fonction pour mettre à jour le compteur
+function updateCounter() {
+    itemCount += 1;
+    counterElement.textContent = itemCount;
+    counterElement.style.display = 'inline'; // Affiche le compteur
+}
+
+// Ajout d'un gestionnaire d'événements au bouton "Acheter"
+const buyButtons = document.querySelectorAll('.buy-now-btn');
+buyButtons.forEach(button => {
+    button.addEventListener('click', updateCounter);
+});
+
+// Initialisation du compteur
+if (itemCount > 0) {
+    counterElement.textContent = itemCount;
+    counterElement.style.display = 'inline'; // Affiche le compteur
+} else {
+    counterElement.style.display = 'none'; // Cache le compteur
+}
