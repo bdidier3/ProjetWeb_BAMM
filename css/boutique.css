@@ -149,8 +149,9 @@ body {
 }
 
 @media (max-width: 600px) {
-    .categorie{
+    .image{
         flex-direction: column;
+        align-items: center;
     }
 }
 
