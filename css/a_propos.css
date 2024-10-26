@@ -111,7 +111,7 @@ input[type="checkbox"]{
   align-items: center;
   padding: 20px;
   border-radius: 30px;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .contenu{
@@ -122,7 +122,6 @@ box-shadow: 0 4px 8px rgb(224, 224, 224);
 margin-left: 10%;
 margin-right: 10%;
 margin-bottom: 5%;
-margin-top: 20%;
 }
 
 /* Style de base pour le contenu */
@@ -137,29 +136,79 @@ background-color: rgb(234, 234, 234); /* Couleur au survol */
 }
 
 h1 {
-text-align: center;
+  text-align: center;
+  color: white;
+  margin-top: 20%;
 }
 
-.contenu-image {
-  display: flex;
-  align-items: flex-start; /* Aligne les images en haut des paragraphes */
-  margin: 20px 0;
+hr {
+  border: 2px solid white; 
+  width: 70%;                
+  margin-top: 20%;        
 }
 
-.contenu {
-  flex: 1; /* Le texte occupe tout l'espace restant */
-  padding: 20px;
-  background-color: #ffffff;
+.formulaire {
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 20%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.image {
-  margin-left: 20px; /* Espace entre le texte et l'image */
-  width: 200px; /* Largeur de l'image */
-  height: auto;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligne les éléments à gauche */
 }
 
+label {
+  margin-top: 15%;
+  font-size: 18px; /* Taille du texte des labels */
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  width: 80%; /* Largeur des champs */
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px; /* Taille du texte dans les champs */
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+  border-color: #555;
+  outline: none;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: black; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #ffe9e9; /* Couleur au survol */
+  color: black;
+}
 
 /*
 --------------------------------------------------------------
