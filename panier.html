@@ -30,7 +30,7 @@
 </header>
 
 <body>
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
     <section>
     <h2>Votre Panier</h2>
     <div class="panier">
@@ -69,22 +69,28 @@
         <p>Sous-total : 219,98 €</p>
         <p>Fraix de livraison : 2,50 €</p>
         <p>TOTAL : 222,48 €</p>
+        <a href="#infopaye">
         <button class="valide-btn">Paiement</button>
-        
+        </a>
         
     </section>
 
     <section id="infopaye">
         <h2>Option de payement</h2>
         <div id="paypal">
-            <h3>Paypal</h3> 
-            <button class="paypal-btn" href="https://www.paypal.com/">Paypal</button>
+            <h3>Paypal</h3>
+            <a href="https://www.paypal.com/your-link-here" target="_blank">
+                <button class="paypal-btn">
+                  Payer avec PayPal
+                </button>
+            </a> 
         </div>
         <div id="optionpayement">
             <h3>Par carte</h3>
-            <input type="text" name=" code" id="prenom" placeholder="Votre Prénom"> <input type="text" name=" code" id="nom" placeholder="Votre Nom">
-            <input type="text" name=" code" id="adresse" placeholder="adresse"> <br>
-            <input type="text" name=" code" id="mail" placeholder="Votre mail"> <input type="text" name=" code" id="mail" placeholder="Votre numéro">
+            <a href="carte.html" >
+                <button class="valide-btn">
+                  Par Carte                </button>
+            </a> 
         </div>
     </section>
 
