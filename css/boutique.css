@@ -118,12 +118,6 @@ body {
 --------------------------------------------------------------
 */
 
-.image{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 .categorie {
     width: 100%;
     padding-block: 16px 32px;
@@ -137,37 +131,55 @@ body {
     flex-direction: column;
 }
 
+.listeProduit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .produit{
     position: relative;
-    background-color: white;
-    margin: 10px;
-    border-radius: 15px;
+    width: 250px;
     display: flex;
-    gap: 8px;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.image {
+    background-color: white;
+    border-radius: 15px;
     width: 250px;
     height: 250px;
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+}
+
+.info {
+    position : relative;
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
-    .image{
+    .listeProduit{
         flex-direction: column;
         align-items: center;
     }
 }
 
 .price {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    margin: 0;
+    position: relative;
     font-size: 18px;
     font-weight: bold;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
-    padding: 5px 10px;
-    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    padding-top: 20px;
 }
 
 .buy-now-btn span {
